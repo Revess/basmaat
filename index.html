@@ -2,7 +2,7 @@
 <html lang="en">
   <meta
     name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
   />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.slim.min.js"></script>
   <script
@@ -11,15 +11,10 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="../javascript/bootstrap.js"></script>
+  <script src="./javascript/bootstrap.js"></script>
 
   <head>
-    <link
-      href="../css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -27,14 +22,15 @@
       crossorigin="anonymous"
     />
 
-    <link href="/css/style.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
     <title>Bas Maat</title>
   </head>
 
   <body>
     <header class="fixed-top d-block" id="topNav">
       <nav
-        class="navbar navbar-expand-lg navbar-dark"
+        class="navbar navbar-expand-lg navbar-dark navTrans"
+        id="navBarTop"
         style="font-size: 1.2rem;"
       >
         <div class="d-flex flex-grow-1">
@@ -429,21 +425,24 @@
                 </div>
               </div>
               <div class="row w-100 mx-auto mt-5" id="fadeBottom">
-                <div class="col-3 text-center">
-                  <a
-                    class="fas fa-4x fa-envelope grow"
-                    href="mailto: revessyt@gmail.com"
-                    style="text-decoration: none; color:#D44638;"
-                  ></a>
-                  <br />
-                  <a
-                    class="fab fa-twitter fa-2x mt-4 grow"
-                    href="https://twitter.com/intent/tweet?screen_name=Revess3&ref_src=twsrc%5Etfw"
-                    style="text-decoration: none; color: rgb(56,161,243);"
-                    data-show-count="false"
-                  ></a>
+                <div class="col-5 text-center">
+                  <div class="row w-100 justify-content-center h-50">
+                    <a
+                      class="fas fa-3x fa-envelope grow"
+                      href="mailto: info@basmaat.com"
+                      style="text-decoration: none; color:#D44638;"
+                    ></a>
+                  </div>
+                  <div class="row w-100 justify-content-center h-50">
+                    <a
+                      class="fab fa-twitter fa-3x mt-4 grow"
+                      href="https://twitter.com/intent/tweet?screen_name=Revess3&ref_src=twsrc%5Etfw"
+                      style="text-decoration: none; color: rgb(56,161,243);"
+                      data-show-count="false"
+                    ></a>
+                  </div>
                 </div>
-                <div class="col-1 text-center">
+                <div class="col-2 text-center">
                   <div
                     class="container w-100 justify-content-center"
                     id="fadeLeft"
@@ -456,48 +455,23 @@
                     </svg>
                   </div>
                 </div>
-                <div class="col-4 text-center">
-                  <a
-                    class="fab fa-4x fa-discord grow"
-                    href="https://discord.gg/hDwuZeN"
-                    target="_blank"
-                    style="text-decoration: none; color: rgb(115, 138, 219);"
-                  ></a>
-                  <br />
-                  <a
-                    class="fab fa-instagram fa-4x mt-4 grow"
-                    href="https://www.instagram.com/re_vess/"
-                    style="text-decoration: none; color: #fb3958;"
-                    data-show-count="false"
-                  ></a>
-                </div>
-                <div class="col-1 text-center">
-                  <div
-                    class="container w-100 justify-content-center"
-                    id="fadeRight"
-                  >
-                    <svg style="height:100%;" width="2">
-                      <rect
-                        height="200"
-                        style="fill:rgb(0, 0, 0);stroke:none; width:100%;"
-                      />
-                    </svg>
+                <div class="col-5 text-center">
+                  <div class="row w-100 justify-content-center h-50">
+                    <a
+                      class="fab fa-3x fa-discord grow"
+                      href="https://discord.gg/hDwuZeN"
+                      target="_blank"
+                      style="text-decoration: none; color: rgb(115, 138, 219);"
+                    ></a>
                   </div>
-                </div>
-                <div class="col-3 text-center">
-                  <a
-                    class="fas fa-4x fa-phone grow"
-                    href="tel:+31620386045"
-                    style="text-decoration: none; color: rgb(37, 211, 102);"
-                  ></a>
-                  <br />
-                  <a
-                    class="fab fa-whatsapp fa-4x mt-4 grow"
-                    href="https://wa.me/+31620386045"
-                    target="_blank"
-                    style="text-decoration: none; color: rgb(37, 211, 102);"
-                    data-show-count="false"
-                  ></a>
+                  <div class="row w-100 justify-content-center h-50">
+                    <a
+                      class="fab fa-instagram fa-3x mt-4 grow"
+                      href="https://www.instagram.com/re_vess/"
+                      style="text-decoration: none; color: #fb3958;"
+                      data-show-count="false"
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -532,7 +506,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-12 text-center">
+              <div class="col-12 text-center pb-2">
                 <a
                   class="fab fa-twitter fa-2x mt-4 twitter-follow-button grow"
                   href="https://twitter.com/revess3?ref_src=twsrc%5Etfw"
@@ -587,6 +561,6 @@
         </div>
       </div>
     </footer>
-    <script src="javascript/animations.js"></script>
+    <script src="./javascript/animations.js"></script>
   </body>
 </html>

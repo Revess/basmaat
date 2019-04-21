@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   background: url("/assets/pictures/homescreen.JPG");
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,9 +11,13 @@ body, html {
 
 .navbar,
 .transparent .navbar-inverse .navbar-inner {
+  transition: all 0.5s ease;
   background: rgb(0, 0, 0);
-  -webkit-transition: width 2s; /* Safari */
-  transition: width 2s;
+}
+
+.navTrans {
+  transition: all 0.5s ease;
+  background: rgba(255, 255, 255, 0);
 }
 
 .footer {
@@ -25,8 +30,13 @@ body, html {
   transition: width 4s;
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.5); }
+.grow {
+  transition: all 0.2s ease-in-out;
+  padding: 0.2rem;
+}
+.grow:hover {
+  transform: scale(1.5);
+}
 
 #Home {
   height: 100vh;
