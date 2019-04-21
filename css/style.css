@@ -1,0 +1,44 @@
+body, html {
+  background: url("/assets/pictures/homescreen.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  max-width: 100%;
+}
+
+.navbar,
+.transparent .navbar-inverse .navbar-inner {
+  background: rgb(0, 0, 0);
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+
+.footer {
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  line-height: 2rem;
+  background: rgb(0, 0, 0);
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 4s;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.5); }
+
+#Home {
+  height: 100vh;
+}
+
+#About,
+#CSD,
+#Composition,
+#Contact {
+  padding-top: 100px;
+  padding-bottom: 69px;
+  background-color: rgb(255, 255, 255);
+  max-width: 75%;
+  margin-left: 12.5%;
+}
