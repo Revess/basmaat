@@ -61,6 +61,29 @@ sr.reveal("#fadeBottom", {
 
 //Text and Title animation in carousel
 $(document).ready(function() {
+  if ($(window).width() < 991) {
+    $("#navBarTop").removeClass("navTrans");
+  }
+
+  $(window).resize(function() {
+    if ($(window).width() < 991) {
+      $("#navBarTop").removeClass("navTrans");
+    } else {
+      if (
+        $(window).scrollTop() <
+        $("#homeBox").position().top + $("#homeBox").outerHeight()
+      ) {
+        $("#navBarTop").addClass("navTrans");
+      }
+      if (
+        $(window).scrollTop() >=
+        $("#homeBox").position().top + $("#homeBox").outerHeight()
+      ) {
+        $("#navBarTop").removeClass("navTrans");
+      }
+    }
+  });
+
   //Change highlight color Navbar
   var navLinks = [
     "#homeLink",
@@ -166,17 +189,19 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     //For the navbar fade
-    if (
-      $(window).scrollTop() <
-      $("#homeBox").position().top + $("#homeBox").outerHeight()
-    ) {
-      $("#navBarTop").addClass("navTrans");
-    }
-    if (
-      $(window).scrollTop() >=
-      $("#homeBox").position().top + $("#homeBox").outerHeight()
-    ) {
-      $("#navBarTop").removeClass("navTrans");
+    if ($(window).width() > 991) {
+      if (
+        $(window).scrollTop() <
+        $("#homeBox").position().top + $("#homeBox").outerHeight()
+      ) {
+        $("#navBarTop").addClass("navTrans");
+      }
+      if (
+        $(window).scrollTop() >=
+        $("#homeBox").position().top + $("#homeBox").outerHeight()
+      ) {
+        $("#navBarTop").removeClass("navTrans");
+      }
     }
 
     if (
@@ -228,7 +253,8 @@ $(document).ready(function() {
     }
     if (
       $(window).scrollTop() >= $("#Contact").position().top ||
-      $(window).scrollTop() + $(window).outerHeight() >= $("footer").position().top
+      $(window).scrollTop() + $(window).outerHeight() >=
+        $("footer").position().top
     ) {
       $("#contactLink").attr("style", "color: rgb(255,255,255) !important");
       $.each(navLinks, function(index, value) {
