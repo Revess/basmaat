@@ -139,22 +139,22 @@ $(document).ready(function() {
     if (carouselPos == 0) {
       $(".carouselHeading").text("Spaced Out");
       $(".carouselDescription").text(
-        "Spaced Out is an animation created by the Croatian animator Stella Hartman. Stella is an animation graduate currently studying to get her masters degree. In this animation the composition is used to exaggerate certain comedic moments. The Sound-Design has also been done by me."
+        "Spaced Out is an animation created by the Croatian animator Stella Hartman. Stella is an animation graduate currently studying to get her masters degree. In this animation the composition is used to exaggerate certain comedic moments. I created the composition as well as the Sound-Design."
       );
     } else if (carouselPos == 1) {
       $(".carouselHeading").text("The Joy of Meeting Again");
       $(".carouselDescription").text(
-        "In this animation, based on the book Nicholas Nickleby by Charles Dickens, a futuristic character has to say goodbye to its life that it is currently living. This is not without the needed pain and tears, but is all for a good thing a new and bright future. This is what I tried to express over the whole length of the video with my composition and sounds. Sound-Design and Composition done by me, this is a university project."
+        "In this animation, based on the book Nicholas Nickleby by Charles Dickens, a futuristic character has to say goodbye to its life that it is currently living. This is not without the needed pain and tears, but is all for a good thing a new and bright future. This is what I tried to express over the whole length of the video with my composition and sounds. I created the composition as well as the Sound-Design, this is a university project."
       );
     } else if (carouselPos == 2) {
       $(".carouselHeading").text("Barcode");
       $(".carouselDescription").text(
-        "In this piece there is a bigger focus on rhythms and the different layers there of. With the piece starting with more of an organized chaos that later resolves itself at the highest point of the animation. Sound-Design and Composition done by me, this is a university project."
+        "In this piece there is a bigger focus on rhythms and the different layers there of. With the piece starting with more of an organized chaos that later resolves itself at the highest point of the animation. I created the composition as well as the Sound-Design, this is a university project."
       );
     } else if (carouselPos == 3) {
       $(".carouselHeading").text("Blue honey");
       $(".carouselDescription").text(
-        "A bee on a journey of becoming part of the group and being accepted by the 'bee' society. On his way he gets pushed away, only to find a secret place where the 'blue honey' is stored. He brings it home, not knowing what havoc it will bring. Sound-Design and Composition done by me, this is a university project."
+        "A bee on a journey of becoming part of the group and being accepted by the 'bee' society. On his way he gets pushed away, only to find a secret place where the 'blue honey' is stored. He brings it home, not knowing what havoc it will bring. I created the composition as well as the Sound-Design, this is a university project."
       );
     }
   });
