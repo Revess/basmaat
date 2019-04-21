@@ -139,7 +139,7 @@ $(document).ready(function() {
     if (carouselPos == 0) {
       $(".carouselHeading").text("Spaced Out");
       $(".carouselDescription").text(
-        "Spaced Out is an animation created by the Croatian animator Stella Hartman. She is a animation graduate currently studying to get her masters degree. In this animation the composition is used to exaggerate the comedic moments. The Sound-Design has also been done by me."
+        "Spaced Out is an animation created by the Croatian animator Stella Hartman. Stella is an animation graduate currently studying to get her masters degree. In this animation the composition is used to exaggerate certain comedic moments. The Sound-Design has also been done by me."
       );
     } else if (carouselPos == 1) {
       $(".carouselHeading").text("The Joy of Meeting Again");
