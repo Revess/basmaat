@@ -61,6 +61,7 @@ sr.reveal("#fadeBottom", {
 
 //Text and Title animation in carousel
 $(document).ready(function() {
+  $("#moreArrows").html('')
   if ($(window).width() < 991) {
     $("#navBarTop").removeClass("navTrans");
   }

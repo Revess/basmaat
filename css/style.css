@@ -52,3 +52,24 @@ html {
   max-width: 75%;
   margin-left: 12.5%;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#moreArrows{
+  position: absolute;
+  bottom: -60px;
+  left: 75px;
+  z-index: 3;
+  padding: 0 10px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  line-height: 0;
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+  transform: translatex(-50%);
+}
