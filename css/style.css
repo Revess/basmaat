@@ -1,5 +1,4 @@
-body,
-html {
+body {
   background: url("/assets/pictures/homescreen.JPG");
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,6 +6,15 @@ html {
   background-attachment: fixed;
   height: 100%;
   max-width: 100%;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-property: padding-top;
+  -o-transition-property: padding-top;
+  transition-property: padding-top;
 }
 
 .navbar,
@@ -57,7 +65,7 @@ html {
   width: 0px;
 }
 
-#moreArrows{
+#moreArrows {
   position: absolute;
   bottom: -60px;
   left: 75px;
