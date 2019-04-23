@@ -50,6 +50,10 @@ body {
   height: 100vh;
 }
 
+#topSpacer {
+  height: 25vh;
+}
+
 #About,
 #CSD,
 #Composition,
