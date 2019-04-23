@@ -50,7 +50,11 @@
           <span class="w-100 d-lg-none d-block"
             ><!-- hidden spacer to center brand on mobile --></span
           >
-          <a class="navbar-brand" href="#Home" style="font-size: 1.8rem;">
+          <a
+            class="navbar-brand"
+            href="../index.html"
+            style="font-size: 1.8rem;"
+          >
             Bas Maat
           </a>
           <div class="w-100 text-right">
@@ -71,21 +75,30 @@
         >
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
-              <a href="#Home" class="nav-link active" id="homeLink">Home</a>
+              <a href="../index.html#Home" class="nav-link active" id="homeLink"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#About" class="nav-link" id="aboutLink">About me</a>
+              <a href="../index.html#About" class="nav-link" id="aboutLink"
+                >About me</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#CSD" class="nav-link" id="csdLink">CSD</a>
+              <a href="../index.html#CSD" class="nav-link" id="csdLink">CSD</a>
             </li>
             <li class="nav-item">
-              <a href="#Composition" class="nav-link" id="compositionLink"
+              <a
+                href="../index.html#Composition"
+                class="nav-link"
+                id="compositionLink"
                 >Composition</a
               >
             </li>
             <li class="nav-item">
-              <a href="#Contact" class="nav-link" id="contactLink">Contact</a>
+              <a href="../index.html#Contact" class="nav-link" id="contactLink"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -98,10 +111,9 @@
           <div class="row align-self-center w-100 mx-auto"></div>
         </div>
       </section>
-
-      <section id="CSD" class="pb-0">
-        <div>
-          <article id="topOfPage">
+      <div id="topOfPage">
+        <section id="CSD" class="pb-0">
+          <article>
             <div class="container w-70">
               <div class="row w-100 mx-auto">
                 <div class="col-12 text-center">
@@ -120,12 +132,119 @@
                       >Kaya Bax</a
                     >.
                   </p>
+                  <a
+                    target="_blank"
+                    class="btn btn-lg btn-light "
+                    style="color: rgb(0, 0, 0); border-color: rgba(0, 0, 0, 0.5);"
+                    href="https://github.com/Revess/KarplusStrong"
+                  >
+                    Github page &#8594;
+                  </a>
                 </div>
               </div>
             </div>
             <!-- A spacer and a line for asiatic -->
             <div class="container w-100 justify-content-center">
-              <svg style="width:100%;" height="100">
+              <svg style="width:100%;" height="50">
+                <rect
+                  height="100"
+                  style="fill:rgba(0, 0, 0, 0);stroke:none; width:100%;"
+                />
+              </svg>
+            </div>
+            <div class="container w-70" id="fadeTop">
+              <div class="row w-100 mx-auto">
+                <div class="col-12 text-center">
+                  <h3 class="text-center py-3">
+                    SynthSong
+                  </h3>
+                  <p class="lead">
+                    The second project I did for University in my second year.
+                    The assignment was to create a synthesizer that can play a
+                    song from an algorithm. The synthesizer is generated using
+                    C++ together with the algorithm for deciding what to play.
+                    The algorithm for the notes itself is a simple Markov Chain,
+                    in the included example you will be able to edit multiple
+                    parameters which are explained on the Github page or in the
+                    included video.
+                  </p>
+                  <a
+                    target="_blank"
+                    class="btn btn-lg btn-light "
+                    style="color: rgb(0, 0, 0); border-color: rgba(0, 0, 0, 0.5);"
+                    href="https://github.com/Revess/SynthSong"
+                  >
+                  Github page &#8594;
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- A spacer and a line for asiatic -->
+            <div class="container w-100 justify-content-center">
+              <svg style="width:100%;" height="50">
+                <rect
+                  height="100"
+                  style="fill:rgba(0, 0, 0, 0);stroke:none; width:100%;"
+                />
+              </svg>
+            </div>
+            <div class="container w-70" id="fadeBottom">
+              <div class="row w-100 mx-auto">
+                <div class="col-12 text-center">
+                  <h3 class="text-center py-3">
+                    ThereminPi
+                  </h3>
+                  <p class="lead">
+                    A Raspberry Pi that can be used and played like a Theremin.
+                  </p>
+                  <a
+                    target="_blank"
+                    class="btn btn-lg btn-light "
+                    style="color: rgb(0, 0, 0); border-color: rgba(0, 0, 0, 0.5);"
+                    href="./thereminPi.html"
+                  >
+                    Theremin Pi &#8594;
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- A spacer and a line for asiatic -->
+            <div class="container w-100 justify-content-center">
+              <svg style="width:100%;" height="50">
+                <rect
+                  height="100"
+                  style="fill:rgba(0, 0, 0, 0);stroke:none; width:100%;"
+                />
+              </svg>
+            </div>
+            <div class="container w-70" id="fadeLeft">
+              <div class="row w-100 mx-auto">
+                <div class="col-12 text-center">
+                  <h3 class="text-center py-3">
+                    Irregular Beat Generator
+                  </h3>
+                  <p class="lead">
+                    In this project I used Python to generate an irregular beat
+                    based on samples. Each of the three elements of the drumkit
+                    (kick, hat, snare) have their own weight where kick is most
+                    important, the snare second and the hats fill in the gaps on
+                    an irregular basis. Each generated file can also be exported
+                    as a midi file.
+                  </p>
+                  <a
+                    target="_blank"
+                    class="btn btn-lg btn-light "
+                    style="color: rgb(0, 0, 0); border-color: rgba(0, 0, 0, 0.5);"
+                    href="https://github.com/Revess/irregularBeatGenerator"
+                  >
+                    Github page &#8594;
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- A spacer and a line for asiatic -->
+            <div class="container w-100 justify-content-center">
+              <svg style="width:100%;" height="50">
                 <rect
                   height="100"
                   style="fill:rgba(0, 0, 0, 0);stroke:none; width:100%;"
@@ -133,8 +252,8 @@
               </svg>
             </div>
           </article>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -198,7 +317,7 @@
                 ></a>
                 <a
                   class="fab fa-instagram fa-2x mt-4 grow"
-                  href="https://www.instagram.com/revess/"
+                  href="https://www.instagram.com/re_vess/"
                   style="text-decoration: none; color: #fb3958;"
                   target="_blank"
                   data-show-count="false"
@@ -210,5 +329,6 @@
       </div>
     </footer>
     <script src="../javascript/animations.js"></script>
+    <script src="../javascript/fadeAnimationSubpages.js"></script>
   </body>
 </html>
