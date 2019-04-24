@@ -1,8 +1,8 @@
 window.sr = ScrollReveal();
-sr.reveal(".navbar", {
-  duration: 2000,
-  origin: "bottom"
-});
+// sr.reveal(".navbar", {
+//   duration: 2000,
+//   origin: "bottom"
+// });
 
 sr.reveal(".footer", {
   duration: 2000,
@@ -74,6 +74,11 @@ function paddingGreat() {
 
 //Text and Title animation in carousel
 $(document).ready(function() {
+  $("#topNav")
+    .css("opacity", 0)
+    .slideDown("slow")
+    .animate({ opacity: 1 }, { queue: false, duration: "slow" });
+
   paddingSmall();
 
   selectNavbarCollapse.on("show.bs.collapse", function() {
