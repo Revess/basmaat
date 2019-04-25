@@ -74,6 +74,9 @@ function paddingGreat() {
 
 //Text and Title animation in carousel
 $(document).ready(function() {
+  var heightOfFrontPage = $(window).height() - $("#navBarTop").outerHeight();
+  $("#Home").css("height", heightOfFrontPage.toString() + "px"); 
+  
   $("#topNav")
     .css("opacity", 0)
     .slideDown("slow")
@@ -157,7 +160,7 @@ $(document).ready(function() {
   ];
 
   //Scrolling animations
-  var scrollSpeed = 125;
+  var scrollSpeed = 250;
   $("#homeLink").click(function() {
     paddingSmall();
     $("html, body").animate(
@@ -166,6 +169,25 @@ $(document).ready(function() {
       },
       scrollSpeed
     );
+  });
+
+  $("#homeArrow").click(function() {
+    let positionPage = $("#About").position().top + 69;
+    if ($(window).width() < 991 && $("#homeLink").is(":visible")) {
+      $("html, body").animate(
+        {
+          scrollTop: positionPage - heightNavbarExpanded
+        },
+        scrollSpeed
+      );
+    } else {
+      $("html, body").animate(
+        {
+          scrollTop: $("#About").position().top
+        },
+        scrollSpeed
+      );
+    }
   });
 
   $("#aboutLink").click(function() {

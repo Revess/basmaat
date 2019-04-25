@@ -1,4 +1,4 @@
-<!-- TODO: Dropdown CSD projects, Wording, Navbar auto pushdown (only need to fix this), floating arrow-->
+<!-- TODO: Wording, Navbar auto pushdown (only need to fix this), floating arrow-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -87,8 +87,11 @@
 
     <main>
       <section id="Home" class="pb-0">
-        <div class="container d-flex h-100">
-          <div class="row align-self-center w-100 mx-auto">
+        <div class="container d-flex">
+          <div
+            class="row align-self-center w-100 mx-auto"
+            style="padding-top: 20%;"
+          >
             <div
               class="col-12 text-center"
               style="background: rgba(0, 0, 0, 0.781); padding-bottom: 2rem; padding-top: 2rem; border-radius: 25px;"
@@ -112,6 +115,16 @@
               </a>
             </div>
           </div>
+        </div>
+        <div
+          class="col-12 text-center align-bottom fixed-bottom"
+          id="downArrow"
+        >
+          <a
+            class="fas fa-chevron-down fa-2x grow nav-link"
+            href="#About"
+            id="homeArrow"
+          ></a>
         </div>
       </section>
 
@@ -430,7 +443,7 @@
                   </h1>
                   <p class="lead" id="fadeLeft">
                     Feel free to contact on any day between 09:00 and 22:00
-                    (GMT+01) on and of the following links:
+                    (GMT+01) via of the following links:
                   </p>
                 </div>
               </div>

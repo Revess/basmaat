@@ -46,7 +46,8 @@ body {
   transform: scale(1.5);
 }
 
-#Home, #FrontPage {
+#Home,
+#FrontPage {
   height: 100vh;
 }
 
@@ -70,21 +71,8 @@ body {
   width: 0px;
 }
 
-#moreArrows {
-  position: absolute;
-  bottom: -60px;
-  left: 75px;
-  z-index: 3;
-  padding: 0 10px;
-  overflow: hidden;
-  cursor: pointer;
-  text-align: center;
-  line-height: 0;
-  -webkit-transform: translatex(-50%);
-  -moz-transform: translatex(-50%);
-  -ms-transform: translatex(-50%);
-  -o-transform: translatex(-50%);
-  transform: translatex(-50%);
+#downArrow {
+  color: rgb(255, 255, 255);
 }
 
 .btn-circle {
@@ -113,12 +101,17 @@ body {
   border-radius: 35px;
 }
 
-.stepper-text{
-  padding-left: 5rem; 
+.stepper-text {
+  padding-left: 5rem;
   padding-top: 0.6rem;
 }
 
 .prettyprint {
   display: block;
   color: #000000;
+}
+
+.fa-chevron-down {
+  text-decoration: none;
+  color: white;
 }
