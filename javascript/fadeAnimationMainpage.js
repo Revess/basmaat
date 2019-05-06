@@ -22,6 +22,7 @@ $(window).scroll(function() {
   ) {
     $("#homeArrow").css("transition", "all 0.2s ease-in-out");
     $("#homeArrow").css("color", "rgba(255,255,255,0");
+    $("#downArrow").animate
   }
   if (
     $(window).scrollTop() +
